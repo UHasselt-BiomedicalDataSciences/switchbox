@@ -3,99 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switchbox</title>
+    <title>Project Name</title>
     <style>
-        /* General Styles */
+        /* Global styles */
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: white;
             color: #333;
-            background-color: #f9f9f9;
+            line-height: 1.8;
         }
-
-        h1, h2, h3 {
-            color: #333;
+        
+        /* Top banner */
+        .banner {
+            background-color: black;
+            color: white;
             text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem;
         }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
+        
+        /* Page container */
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
         }
 
-        .section {
+        /* Sections */
+        section {
             margin-bottom: 20px;
         }
 
-        .section:last-of-type {
-            margin-bottom: 0;
+        h1, h2 {
+            color: #333;
         }
 
-        /* Banner Styles */
-        .top-banner, .bottom-banner {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
+        /* Repository links */
+        .repo-links a {
+            display: block;
+            color: #0066cc;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .repo-links a:hover {
+            text-decoration: underline;
         }
 
-        @media screen and (max-width: 768px) {
-            body {
-                margin: 10px;
-            }
-
-            .container {
-                padding: 15px;
-            }
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #555;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
         }
     </style>
 </head>
 <body>
+    <!-- Top banner -->
+    <div class="banner">SwitchBox</div>
+    
+    <!-- Page container -->
     <div class="container">
         <!-- Title Section -->
-        <header class="section">
-            <h1>Switchbox</h1>
-            <p>Welcome to my GitHub Pages site!</p>
-        </header>
-
-        <!-- Introduction Section -->
-        <section class="section">
-            <h2>Introduction</h2>
-            <p>***</p>
+        <section>
+            <h1></h1>
         </section>
 
-        <!-- Repositories Section -->
-        <section class="section">
+        <!-- Summary -->
+        <section>
+            <h2>Summary</h2>
+            <p>A vast amount of real-world data on multiple sclerosis (MS) is distributed across various global 
+                registries. To improve collaboration among these registries, there is need for a unified globally 
+                recognized data format. The SwitchBox is designed to assist data custodians in converting 
+                their data into this globally recognized data format using a tool that can be easily operated at a local level.
+            </p>
+            <p>The SwithBox is part of Tine Parciak's PhD research titled
+                <a href="https://www.uhasselt.be/en/instituten-en/biomed-en/immunology/biomedical-data-sciences/harmonisation-strategies-for-real-world-multiple-sclerosis-data-sources" target="_blank">
+                <i>"Harmonisation strategies for real-world multiple sclerosis data sources."</i>
+                </a>
+            </p>
+        </section>
+
+        <!-- Repository Links -->
+        <section class="repo-links">
             <h2>Repositories</h2>
-            <ul>
-                <li><a href="https://github.com/your-username/repo1" target="_blank">Repository 1</a> - Brief description of the repository.</li>
-                <li><a href="https://github.com/your-username/repo2" target="_blank">Repository 2</a> - Brief description of the repository.</li>
-                <li><a href="https://github.com/your-username/repo3" target="_blank">Repository 3</a> - Brief description of the repository.</li>
-            </ul>
+            <a href="https://github.com/msda-switchbox/msda_switchbox" target="_blank">SwitchBox</a>
+            <a href="https://github.com/msda-switchbox/msda_etl" target="_blank">SwitchBox - ETL</a>
+            <a href="https://github.com/msda-switchbox/msda_switchbox_db" target="_blank">SwitchBox - Database</a>
+            <a href="https://github.com/msda-switchbox/msda_switchbox_ui" target="_blank">Switchbox - User Interface</a>
         </section>
 
-        <!-- References Section -->
-        <section class="section">
+        <!-- References -->
+        <section>
             <h2>References</h2>
-            <ol>
-                <li><a href="https://github.com/">GitHub</a> - Official GitHub website.</li>
-            </ol>
+            Parciak T, Geys L, Helme A, et al., 
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10935622/pdf/10.1177_13524585231216004.pdf" target="_blank">
+                    <i>"Introducing a core dataset for real-world data in multiple sclerosis registries and cohorts: Recommendations from a global task force."</i>
+                </a>, 
+            Multiple Sclerosis Journal, 2024, Vol. 30(3) 396–418, doi: 10.1177/13524585231216004.
         </section>
+
+        <!-- Footer -->
+        <footer>
+            <h2></h2>
+            <p></a></p>
+        </footer>
     </div>
 </body>
 </html>
-

@@ -1,4 +1,4 @@
-# SwitchBox
+# [SwitchBox](https://uhasselt-biomedicaldatasciences.github.io/switchbox/)
 
 ## Summary
 
@@ -7,8 +7,6 @@ A vast amount of real-world data on multiple sclerosis (MS) is distributed acros
 The SwithBox is part of Tine Parciak's PhD research titled "Harmonisation strategies for real-world multiple sclerosis data sources."
 
 ## Repositories
-
-[SwitchBox GitHub page.](https://uhasselt-biomedicaldatasciences.github.io/switchbox/)
 
 - [SwitchBox](https://github.com/msda-switchbox/msda_switchbox)
 - [SwitchBox - ETL](https://github.com/msda-switchbox/msda_etl)

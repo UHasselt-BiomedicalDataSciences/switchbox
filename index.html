@@ -16,14 +16,23 @@
         }
         
         /* Top banner */
-        .banner {
-            background-color: rgb(0, 0, 0);
+        .top-banner {
+            background-color: rgb(38, 4, 141);
+            color: white;
+            text-align: left;
+            padding: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Bottom banner */
+        .bottom-banner {
+            background-color: rgb(0, 8, 119);
             color: white;
             text-align: center;
-            padding: 2rem;
-            font-size: 1.5rem;
-        }
-        
+            padding: 1.5rem;
+            font-size: 0.5rem;            
+        }     
+
         /* Page container */
         .container {
             max-width: 800px;
@@ -40,7 +49,6 @@
             color: #333;
         }
 
-        /* Repository links */
         .repo-links a {
             display: block;
             color: #0066cc;
@@ -51,7 +59,6 @@
             text-decoration: underline;
         }
 
-        /* Footer */
         footer {
             margin-top: 20px;
             font-size: 1rem;
@@ -63,27 +70,37 @@
 </head>
 <body>
     <!-- Top banner -->
-    <div class="banner"></div>
+    <div class="top-banner">SwitchBox</div>
     
     <!-- Page container -->
     <div class="container">
         <!-- Title Section -->
         <section>
-            <h1>SwitchBox</h1>
+            <h1></h1>
         </section>
 
         <!-- Summary -->
         <section>
-            <h2>Summary</h2>
-            <p>A vast amount of real-world data on multiple sclerosis (MS) is distributed across various global 
-                registries. To improve collaboration among these registries, there is need for a unified globally 
-                recognized data format. The SwitchBox is designed to assist data custodians in converting 
-                their data into this globally recognized data format using a tool that can be easily operated at a local level.
+            <h2></h2>
+            <p>
+                Real-world data (RWD) in healthcare is crucial for generating real-world evidence (RWE) and providing insights beyond   
+                clinical trial limitations. In the context of multiple sclerosis (MS), RWD allows valuable insights into this chronic, 
+                incurable autoimmune disease of the central nervous system.
+                <br><br>
+                To expand and collaborate with other RWD sources like electronic healthcare records (EHR), investigating initiatives for 
+                standardising RWD in healthcare is necessary. OHDSI is an initiative that uses the OMOP Common Data Model to standardise 
+                healthcare RWD.
+                <br><br>
+                The SwitchBox is a tool that automatically transforms source data in a certain format into the OMOP Common Data Model, 
+                lowering the barrier to becoming part of the OHDSI community and collaborating with data partners from within the MS 
+                community and beyond.
             </p>
-            <p>The SwithBox is part of Tine Parciak's PhD research titled
-                <a href="https://www.uhasselt.be/en/instituten-en/biomed-en/immunology/biomedical-data-sciences/harmonisation-strategies-for-real-world-multiple-sclerosis-data-sources" target="_blank">
-                <i>"Harmonisation strategies for real-world multiple sclerosis data sources."</i>
-                </a>
+        </section>
+        <section>
+            <h2></h2>
+            <p>
+                The Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) is an open community data standard, designed to standardize the structure and content 
+                of observational data and to enable efficient analyses that can produce reliable evidence.
             </p>
         </section>
 
@@ -109,8 +126,17 @@
         <!-- Footer -->
         <footer>
             <h2></h2>
-            <p></a></p>
+            <p>
+                <i>The SwitchBox is part of Tine Parciak's PhD research titled
+                <a href="https://www.uhasselt.be/en/instituten-en/biomed-en/immunology/biomedical-data-sciences/harmonisation-strategies-for-real-world-multiple-sclerosis-data-sources" target="_blank">"Harmonisation strategies for real-world multiple sclerosis data sources."
+                </a>
+                </i>
+            </p>
         </footer>
     </div>
+    
+    <!-- Bottom banner -->
+    <div class="bottom-banner"></div>
+
 </body>
 </html>

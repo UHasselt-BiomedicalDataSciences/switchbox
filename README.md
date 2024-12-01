@@ -1,22 +1,9 @@
 # [SwitchBox](https://uhasselt-biomedicaldatasciences.github.io/switchbox/)
 
-## Summary
+Real-world data (RWD) in healthcare is crucial for generating real-world evidence (RWE) and providing insights beyond clinical trial limitations. In the context of multiple sclerosis (MS), RWD allows valuable insights into this chronic, incurable autoimmune disease of the central nervous system.
 
-A vast amount of real-world data on multiple sclerosis (MS) is distributed across various global registries. To improve collaboration among these registries, there is need for a unified globally recognized data format. The SwitchBox is designed to assist data custodians in converting their data into this globally recognized data format using a tool that can be easily operated at a local level.
+To expand and collaborate with other RWD sources like electronic healthcare records (EHR), investigating initiatives for standardising RWD in healthcare is necessary. OHDSI is an initiative that uses the OMOP common data model to standardise healthcare RWD.
 
-The SwithBox is part of Tine Parciak's PhD research titled "Harmonisation strategies for real-world multiple sclerosis data sources."
-
-## Repositories
-
-- [SwitchBox](https://github.com/msda-switchbox/msda_switchbox)
-- [SwitchBox - ETL](https://github.com/msda-switchbox/msda_etl)
-- [SwitchBox - Database](https://github.com/msda-switchbox/msda_switchbox_db)
-- [Switchbox - User Interface](https://github.com/msda-switchbox/msda_switchbox_ui) 
-
-
-
-## References
-
-Parciak T, Geys L, Helme A, et al., ["Introducing a core dataset for real-world data in multiple sclerosis registries and cohorts: Recommendations from a global task force."](https://pmc.ncbi.nlm.nih.gov/articles/PMC10935622/pdf/10.1177_13524585231216004.pdf) , Multiple Sclerosis Journal, 2024, Vol. 30(3) 396–418, doi: 10.1177/13524585231216004.
+The SwitchBox is a tool that automatically transforms source data in a certain format into the OMOP common data model, lowering the barrier to become part of the OHDSI community and to collaborate with data partners from within the MS community and beyond.
 
 ---

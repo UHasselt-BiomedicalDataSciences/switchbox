@@ -26,12 +26,23 @@
 
         /* Bottom banner */
         .bottom-banner {
+            position: relative; /* Create a positioning context for the text */
             background-color: rgb(0, 8, 119);
             color: white;
             text-align: center;
-            padding: 1.5rem;
-            font-size: 0.5rem;            
+            padding: 0.5rem;
+            font-size: 0.5rem;  
+            height: 30px; /* Set height to ensure visibility */
         }     
+
+        .bottom-banner-text {
+            position: absolute; /* Position relative to .bottom-banner */
+            top: 50%; /* Center vertically */
+            right: 15px; /* Align to the right with some margin */
+            transform: translateY(-50%); /* Adjust for exact vertical centering */
+            font-size: 12px; /* Adjust text size as needed */
+            color: white; /* Ensure the text is visible on dark background */
+        }
 
         /* Page container */
         .container {
@@ -62,11 +73,24 @@
 
         footer {
             margin-top: 20px;
-            font-size: 1rem;
+            font-size: 0.9rem;
             text-align: justify;
             color: #555;
             border-top: 1px solid #ddd;
             padding-top: 10px;
+        }
+        
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            color: #333;
         }
     </style>
 </head>
@@ -85,26 +109,18 @@
         <section>
             <h2></h2>
             <p>
-                Real-world data (RWD) in healthcare is crucial for generating real-world evidence (RWE) and providing insights beyond   
-                clinical trial limitations. In the context of multiple sclerosis (MS), RWD allows valuable insights into this chronic, 
-                incurable autoimmune disease of the central nervous system.
+                Real-world data (RWD) in healthcare is essential for generating real-world evidence (RWE), providing insights that extend beyond the limitations of 
+                clinical trials. In the context of multiple sclerosis (MS), RWD offers a deeper understanding of this chronic, incurable autoimmune disease affecting 
+                the central nervous system.
                 <br><br>
-                To expand and collaborate with other RWD sources like electronic healthcare records (EHR), investigating initiatives for 
-                standardising RWD in healthcare is necessary. OHDSI is an initiative that uses the OMOP Common Data Model to standardise 
-                healthcare RWD.
-                <br><br>
-                The SwitchBox is a tool that automatically transforms source data transformed to the 
-                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10935622/pdf/10.1177_13524585231216004.pdf" target="_blank">MS 
-                    Core Dataset format,</a> into the OMOP Common Data Model, 
-                lowering the barrier to becoming part of the OHDSI community and collaborating with data partners from within the MS 
-                community and beyond.
-            </p>
-        </section>
-        <section>
-            <h2></h2>
-            <p>
-                The Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) is an open community data standard, designed to standardize the structure and content 
-                of observational data and to enable efficient analyses that can produce reliable evidence.
+                To facilitate collaboration and integration with other RWD sources, such as electronic healthcare records (EHRs), initiatives for standardizing 
+                healthcare data are vital. The Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) serves as an open community standard, 
+                designed to harmonize the structure and content of observational data while enabling efficient analyses that produce reliable evidence.
+                <br><br>                
+                The OHDSI (Observational Health Data Sciences and Informatics) initiative leverages the OMOP CDM to standardize RWD across diverse sources. 
+                Supporting this effort, the SwitchBox tool streamlines the transformation of source data formatted in the MS Core Dataset into the OMOP Common 
+                Data Model. By automating this process, SwitchBox lowers barriers to participating in the OHDSI community, fostering collaboration among MS data 
+                partners and beyond.
             </p>
         </section>
 
@@ -114,8 +130,16 @@
             <a href="https://github.com/msda-switchbox/msda_switchbox" target="_blank">SwitchBox</a>
             <a href="https://github.com/msda-switchbox/msda_etl" target="_blank">SwitchBox - ETL</a>
             <a href="https://github.com/msda-switchbox/msda_switchbox_db" target="_blank">SwitchBox - Database</a>
-            <a href="https://github.com/msda-switchbox/msda_switchbox_ui" target="_blank">Switchbox - User Interface</a>
+            <a href="https://github.com/msda-switchbox/msda_switchbox_ui" target="_blank">SwitchBox - User Interface</a>
         </section>
+
+        <!-- Installation -->
+        To install the SwitchBox (prerequisite docker):
+        
+        <div>
+            <pre><code>docker run --pull=always --rm -i -v /var/run/docker.sock:/var/run/docker.sock:rw ghcr.io/msda-switchbox/msda_switchbox:latest</code></pre>
+        </div>
+
 
         <!-- References -->
         <section>
@@ -140,7 +164,8 @@
     </div>
     
     <!-- Bottom banner -->
-    <div class="bottom-banner"></div>
-
+    <div class="bottom-banner">
+        <div class="bottom-banner-text"><i>Last update: 9 December 2024</i></div>
+    </div>
 </body>
 </html>

@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-The SwitchBox is part of Tine Parciak's PhD research titled: *["Harmonisation strategies for real-world multiple sclerosis data sources."](https://www.uhasselt.be/en/instituten-en/biomed-en/immunology/biomedical-data-sciences/harmonisation-strategies-for-real-world-multiple-sclerosis-data-sources)*.
+The SwitchBox is part of Tine Parciak's PhD research titled: *["Harmonisation strategies for real-world multiple sclerosis data sources."](https://www.uhasselt.be/en/instituten-en/biomed-en/immunology/biomedical-data-sciences/harmonisation-strategies-for-real-world-multiple-sclerosis-data-sources){target="_blank"}*.

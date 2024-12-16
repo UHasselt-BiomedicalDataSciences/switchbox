@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "SwitchBox"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - install.qmd
+      - references.qmd
+      - about.qmd
+    right:
+      - text: "GitHub"
+        href: https://github.com/msda-switchbox
+        icon: github
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true

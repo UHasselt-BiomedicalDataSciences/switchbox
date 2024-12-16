@@ -13,7 +13,7 @@ website:
       - references.qmd
       - about.qmd
       - text: "GitHub"
-        href: https://github.com/msda-switchbox
+        href: https://github.com/orgs/msda-switchbox/repositories
         icon: github
 format:
   html:

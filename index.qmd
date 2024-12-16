@@ -1,6 +1,3 @@
----
-title: "SwitchBox"
----
 
 [![](img/SwitchBox.png)](https://github.com/UHasselt-BiomedicalDataSciences/switchbox/blob/main/img/SwitchBox.PNG)
 

@@ -5,9 +5,6 @@ project:
 website:
   title: "SwitchBox"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
     right:
       - install.qmd
       - references.qmd

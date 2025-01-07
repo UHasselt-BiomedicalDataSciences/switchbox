@@ -8,3 +8,7 @@ Real-world data (RWD) in healthcare is essential for generating real-world evide
 To facilitate collaboration and integration with other RWD sources, such as electronic healthcare records (EHRs), initiatives for standardizing healthcare data are vital. The Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) serves as an open community standard, designed to harmonize the structure and content of observational data while enabling efficient analyses that produce reliable evidence.
 
 The OHDSI (Observational Health Data Sciences and Informatics) initiative leverages the OMOP CDM to standardize RWD across diverse sources. Supporting this effort, the SwitchBox tool streamlines the transformation of source data formatted in the MS Core Dataset into the OMOP Common Data Model. By automating this process, SwitchBox lowers barriers to participating in the OHDSI community, fostering collaboration among MS data partners and beyond.
+
+---
+
+The SwitchBox is part of [Tine Parciak's](https://www.uhasselt.be/en/instituten-en/biomed-en/immunology/biomedical-data-sciences/tina-parciak){target="_blank"} PhD research titled: *["Harmonisation strategies for real-world multiple sclerosis data sources."](https://www.uhasselt.be/en/instituten-en/biomed-en/immunology/biomedical-data-sciences/harmonisation-strategies-for-real-world-multiple-sclerosis-data-sources){target="_blank"}*.

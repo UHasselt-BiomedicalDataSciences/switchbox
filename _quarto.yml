@@ -8,7 +8,6 @@ website:
     right:
       - install.qmd
       - references.qmd
-      - about.qmd
       - text: "GitHub"
         href: https://github.com/orgs/msda-switchbox/repositories
         target: _blank

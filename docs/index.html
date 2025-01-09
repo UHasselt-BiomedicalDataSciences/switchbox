@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -89,14 +123,6 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./install.html"> 
-<span class="menu-text">Install</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./references.html"> 
-<span class="menu-text">References</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="https://github.com/orgs/msda-switchbox/repositories" target="_blank"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text">GitHub</span></a>
@@ -126,6 +152,10 @@ ul.task-list li input[type="checkbox"] {
 <p>Real-world data (RWD) in healthcare is essential for generating real-world evidence (RWE), providing insights that extend beyond the limitations of clinical trials. In the context of multiple sclerosis (MS), RWD offers a deeper understanding of this chronic, incurable autoimmune disease affecting the central nervous system.</p>
 <p>To facilitate collaboration and integration with other RWD sources, such as electronic healthcare records (EHRs), initiatives for standardizing healthcare data are vital. The Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) serves as an open community standard, designed to harmonize the structure and content of observational data while enabling efficient analyses that produce reliable evidence.</p>
 <p>The OHDSI (Observational Health Data Sciences and Informatics) initiative leverages the OMOP CDM to standardize RWD across diverse sources. Supporting this effort, the SwitchBox tool streamlines the transformation of source data formatted in the MS Core Dataset into the OMOP Common Data Model. By automating this process, SwitchBox lowers barriers to participating in the OHDSI community, fostering collaboration among MS data partners and beyond.</p>
+<p>To install the SwitchBox (prerequisite docker):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--pull</span><span class="op">=</span>always <span class="at">--rm</span> <span class="at">-i</span> <span class="at">-v</span> /var/run/docker.sock:/var/run/docker.sock:rw ghcr.io/msda</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Reference</strong></p>
+<p>Parciak T, Geys L, Helme A, et al., <em><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10935622/pdf/10.1177_13524585231216004.pdf" target="_blank">“Introducing a core dataset for real-world data in multiple sclerosis registries and cohorts: Recommendations from a global task force.</a></em>, Multiple Sclerosis Journal, 2024, Vol. 30(3) 396–418, doi: 10.1177/13524585231216004.</p>
 <hr>
 <p>The SwitchBox is part of <a href="https://www.uhasselt.be/en/instituten-en/biomed-en/immunology/biomedical-data-sciences/tina-parciak" target="_blank">Tine Parciak’s</a> PhD research titled: <em><a href="https://www.uhasselt.be/en/instituten-en/biomed-en/immunology/biomedical-data-sciences/harmonisation-strategies-for-real-world-multiple-sclerosis-data-sources" target="_blank">“Harmonisation strategies for real-world multiple sclerosis data sources.”</a></em>.</p>
 

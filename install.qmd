@@ -1,9 +1,0 @@
----
-title: "Install"
----
-
-To install the SwitchBox (prerequisite docker):
-
-```bash
-docker run --pull=always --rm -i -v /var/run/docker.sock:/var/run/docker.sock:rw ghcr.io/msda
-```

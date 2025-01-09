@@ -1,5 +1,0 @@
----
-title: "References"
----
-
-Parciak T, Geys L, Helme A, et al., *["Introducing a core dataset for real-world data in multiple sclerosis registries and cohorts: Recommendations from a global task force.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10935622/pdf/10.1177_13524585231216004.pdf){target="_blank"}*, Multiple Sclerosis Journal, 2024, Vol. 30(3) 396–418, doi: 10.1177/13524585231216004.

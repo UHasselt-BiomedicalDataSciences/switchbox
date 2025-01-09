@@ -6,8 +6,6 @@ website:
   title: "SwitchBox"
   navbar:
     right:
-      - install.qmd
-      - references.qmd
       - text: "GitHub"
         href: https://github.com/orgs/msda-switchbox/repositories
         target: _blank

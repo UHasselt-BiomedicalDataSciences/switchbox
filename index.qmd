@@ -5,19 +5,23 @@
 
 Real-world data (RWD) in healthcare is essential for generating real-world evidence (RWE), providing insights that extend beyond the limitations of clinical trials. In the context of multiple sclerosis (MS), RWD offers a deeper understanding of this chronic, incurable autoimmune disease affecting the central nervous system.
 
-To facilitate collaboration and integration with other RWD sources, such as electronic healthcare records (EHRs), initiatives for standardizing healthcare data are vital. The Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) serves as an open community standard, designed to harmonize the structure and content of observational data while enabling efficient analyses that produce reliable evidence.
+To facilitate collaboration and integration with other RWD sources, such as electronic healthcare records (EHRs), initiatives for standardising healthcare data are vital. The Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) serves as an open community standard, designed to harmonise the structure and content of observational data while enabling efficient analyses that produce reliable evidence.
 
-The OHDSI (Observational Health Data Sciences and Informatics) initiative leverages the OMOP CDM to standardize RWD across diverse sources. Supporting this effort, the SwitchBox tool streamlines the transformation of source data formatted in the MS Core Dataset into the OMOP Common Data Model. By automating this process, SwitchBox lowers barriers to participating in the OHDSI community, fostering collaboration among MS data partners and beyond.
+The OHDSI (Observational Health Data Sciences and Informatics) initiative leverages the OMOP CDM to standardise RWD across diverse sources. Supporting this effort, the SwitchBox tool streamlines the transformation of source data formatted in the MS Core Dataset into the OMOP Common Data Model. By automating this process, SwitchBox lowers barriers to participating in the OHDSI community, fostering collaboration among MS data partners and beyond.
 
+## SwitchBox installation
 
-To install the SwitchBox (prerequisite docker):
+SwitchBox is distributed as a Docker container and is provided via a GitHub container registry. Ensure that Docker is installed and running on your system before proceeding.
+
+To install and run SwitchBox, execute the following command:
 
 ```bash
 docker run --pull=always --rm -i -v /var/run/docker.sock:/var/run/docker.sock:rw ghcr.io/msda-switchbox/msda_switchbox:latest
 ```
 
+For additional documentation, see the [SwitchBox GitHub repositories](https://github.com/orgs/msda-switchbox/repositories).
 
-**Reference**
+## Reference
 
 Parciak T, Geys L, Helme A, et al., *["Introducing a core dataset for real-world data in multiple sclerosis registries and cohorts: Recommendations from a global task force.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10935622/pdf/10.1177_13524585231216004.pdf){target="_blank"}*, Multiple Sclerosis Journal, 2024, Vol. 30(3) 396–418, doi: 10.1177/13524585231216004.
 
